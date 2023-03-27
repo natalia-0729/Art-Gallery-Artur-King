@@ -177,6 +177,9 @@ display: contents;
     padding: 13px 17px;
     display: block;
     margin: 0 auto;
+
+    max-width: 150px;
+    text-align: center;
     &:hover{
       background-color: darken(#20a0e1, 10%);
     }
@@ -241,7 +244,7 @@ display: contents;
   }
   &__title-link, &__title{
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
     color: #0D0D0D;
@@ -277,6 +280,9 @@ display: contents;
     padding: 15px 15px;
     display: block;
     margin: 0 auto;
+
+    max-width: 110px;
+    text-align: center;
     &:hover{
     background-color: darken(#20a0e1, 5%);
     }
@@ -348,12 +354,33 @@ display: contents;
     padding: 15px 35px;
     display: block;
     margin-top: 25px;
+
+    max-width: 100px;
+    text-align: center;
     &:hover{
     background-color: darken(#20a0e1, 5%);
     }
   }
   &__descr-btn{
     display: none;
+
+    background-color: #20a0e1;
+    box-shadow: 0px 7px 17px -10px rgba(142, 127, 66, 0.35);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 12px;
+    line-height: 10px;
+    color: #F9F9F9;
+    font-weight: 600;
+
+    padding: 15px 35px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    max-width: 150px;
+    text-align: center;
   }
 }
 

@@ -85,6 +85,11 @@
     &__socials{
       margin: 25px 0;
     }
+    &__socials-link{
+      width: 32px;
+      height: 32px;
+      transition: none;
+    }
     &__footer-text{
       font-size: 11px;
       line-height: 17px;
@@ -92,7 +97,13 @@
     }
     &__footer-btn{
       font-size: 12px;
+      &:hover{
+        background-color: #20a0e1;
+      }
     }
+  }
+  .menu__list-item:hover{
+    background-color: transparent;
   }
   .main{
     padding: 70px 0 70px 240px;
@@ -120,8 +131,20 @@
     &__content-btn{
       font-size: 9px;
       padding: 9px 11px;
+      &:hover{
+        background-color: #20a0e1;
+      }
     }
-  }
+    &__filter-btn:hover{
+      color: #3A3939;
+      font-weight: 500;
+    }
+    &__card:hover{
+        .portfolio__img{
+          transform: none;
+        }
+      }
+    }
   .title{
     font-size: 14px;
     line-height: 22px;
@@ -130,7 +153,20 @@
     font-size: 12px;
     line-height: 19px;
   }
-
+  .portfolio{
+    &__filter-btn:hover{
+      color: #3A3939;
+      font-weight: 500;
+    }
+    &__card:hover{
+        .portfolio__img{
+          transform: none;
+        }
+      }
+    &__content-btn:hover{
+      background-color: #20a0e1;
+    }
+  }
   .card{
     margin: 0 20px;
     &__slide{
@@ -156,6 +192,9 @@
     &__btn{
       padding: 13px 32px;
       margin-top: 20px;
+      &:hover{
+        background-color: #20a0e1;
+      }
     }
   }
   .slick-dots{
@@ -180,6 +219,9 @@
   .contacts{
     &__input, &__textarea{
       width: 300px;
+    }
+    &__btn:hover{
+      background-color: #20a0e1;
     }
   }
 }
@@ -483,23 +525,6 @@
     }
     &__descr-btn{
       display: block;
-      background-color: #20a0e1;
-      box-shadow: 0px 7px 17px -10px rgba(142, 127, 66, 0.35);
-      border-radius: 3px;
-      border: none;
-      cursor: pointer;
-  
-      font-size: 12px;
-      line-height: 10px;
-      color: #F9F9F9;
-      font-weight: 600;
-  
-      padding: 15px 35px;
-      margin: 0 auto;
-      margin-top: 20px;
-      &:hover{
-      background-color: darken(#20a0e1, 5%);
-      }
     }
   }
   .slick-dots button {
